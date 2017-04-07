@@ -116,6 +116,11 @@
   <script>
     $(function () {
       index.doFun();
+
+      //wx中禁止下拉，露底
+      $('body').on('touchmove', function (event) {
+        event.preventDefault();
+      })
     })
   </script>
 </body>
